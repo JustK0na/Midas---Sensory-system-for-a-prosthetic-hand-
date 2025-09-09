@@ -1,2 +1,3 @@
-﻿# Midas Sensory system for a prosthetic hand
+﻿# Midas -- Sensory system for a prosthetic hand
+
 
