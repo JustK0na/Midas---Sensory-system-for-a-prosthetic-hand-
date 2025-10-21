@@ -42,7 +42,7 @@ void clearScreen(){
 }
 
 void infoPrint(char *gameName, char key, int a, clock_t deltaTmicro){
-  printf("somethinf button: %c\t%s\ttps %f\tfps: %.2f\n",key, gameName,
+  printf("curr button: %c\t%s\ttps %f\tfps: %.2f\n",key, gameName,
 	 (float)a*deltaTmicro/1000000.0, 1000000.0/deltaTmicro);
   fflush(stdout);  
 }

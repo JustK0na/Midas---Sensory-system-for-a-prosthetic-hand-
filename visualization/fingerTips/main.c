@@ -10,7 +10,7 @@ int main(){
   struct termios oldConf = enableRAWmode();
   clock_t nowClock, pastClock, deltaTMacro=0;
   char key = 'c';
-  char name[32] = "Midas";
+  char name[32] = "fingerTips";
   map_t map;
   int tick = 0;
 
@@ -41,3 +41,7 @@ int main(){
 
   return 0;
 }
+
+// compile
+// gcc -Wall -pedantic -o fingerTips main.c T_TenGine.c
+
