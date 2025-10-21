@@ -1,0 +1,10 @@
+# ninja log v5
+4	79	0	/home/mikolaj/studia/inznierka/Midas---Sensory-system-for-a-prosthetic-hand-/visualization/Qt/untitled/build/Desktop_Qt_6_9_0-Debug/CMakeFiles/cmake.verify_globs	9713981bf305eafd
+79	646	1761050978584571796	untitled_autogen/timestamp	deb507efababf36e
+79	646	1761050978584571796	untitled_autogen/mocs_compilation.cpp	deb507efababf36e
+79	646	1761050978584571796	/home/mikolaj/studia/inznierka/Midas---Sensory-system-for-a-prosthetic-hand-/visualization/Qt/untitled/build/Desktop_Qt_6_9_0-Debug/untitled_autogen/timestamp	deb507efababf36e
+79	646	1761050978584571796	/home/mikolaj/studia/inznierka/Midas---Sensory-system-for-a-prosthetic-hand-/visualization/Qt/untitled/build/Desktop_Qt_6_9_0-Debug/untitled_autogen/mocs_compilation.cpp	deb507efababf36e
+647	2863	1761050980807230085	CMakeFiles/untitled.dir/mainwindow.cpp.o	b02e4356de6f80c8
+646	2869	1761050980814229012	CMakeFiles/untitled.dir/untitled_autogen/mocs_compilation.cpp.o	211d28c8b0897938
+647	2882	1761050980827227020	CMakeFiles/untitled.dir/main.cpp.o	88e492606707a4d4
+2882	3337	1761050981279157886	untitled	bae421b05165a749

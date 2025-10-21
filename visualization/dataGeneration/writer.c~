@@ -1,0 +1,20 @@
+#include <fcntl.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <unistd.h>
+
+int main(){
+
+  int fd;
+  char * pathToFIFO = "/tmp/fifo";
+
+  mkfifo(pathToFIFO, 0666);
+
+  fd = open(pathToFIFO, O_WRONLY);
+  write(fd, "Hello from writer", sizeof("Hello from writer"));
+  close(fd);
+
+  unlink(pathToFIFO);
+
+  return 0;
+}
