@@ -14,6 +14,7 @@
 #define __CHAR_BIT__ 8
 #define __UINT8_MAX__ 0xff
 #define __SCHAR_WIDTH__ 8
+#define QT_QUICK3DUTILS_LIB 1
 #define __WINT_MAX__ 0xffffffffU
 #define __FLT32_MIN_EXP__ (-125)
 #define __cpp_static_assert 201411L
@@ -41,6 +42,7 @@
 #define __cpp_variable_templates 201304L
 #define __FLT32X_MAX_EXP__ 1024
 #define __GCC_HAVE_SYNC_COMPARE_AND_SWAP_1 1
+#define QT_OPENGL_LIB 1
 #define __FLT32_HAS_DENORM__ 1
 #define __UINT_FAST8_MAX__ 0xff
 #define __cpp_rvalue_reference 200610L
@@ -61,6 +63,7 @@
 #define __BFLT16_MAX_10_EXP__ 38
 #define __BFLT16_MAX_EXP__ 128
 #define __LDBL_IS_IEC_60559__ 1
+#define QT_QMLINTEGRATION_LIB 1
 #define __FLT64X_HAS_QUIET_NAN__ 1
 #define __UINT_LEAST8_MAX__ 0xff
 #define __GCC_ATOMIC_BOOL_LOCK_FREE 2
@@ -70,12 +73,14 @@
 #define __BFLT16_DECIMAL_DIG__ 4
 #define __linux 1
 #define __DEC32_EPSILON__ 1E-6DF
+#define QT_QMLMODELS_LIB 1
 #define __FLT_EVAL_METHOD_TS_18661_3__ 0
 #define __UINT32_MAX__ 0xffffffffU
 #define __GXX_EXPERIMENTAL_CXX0X__ 1
 #define __DBL_DENORM_MIN__ double(4.94065645841246544176568792868221372e-324L)
 #define __FLT128_MIN_EXP__ (-16381)
 #define __WINT_MIN__ 0U
+#define QT_GRAPHS_LIB 1
 #define __FLT128_MIN_10_EXP__ (-4931)
 #define __FLT32X_IS_IEC_60559__ 1
 #define __INT_LEAST16_WIDTH__ 16
@@ -147,7 +152,9 @@
 #define __cpp_fold_expressions 201603L
 #define __DEC32_MIN_EXP__ (-94)
 #define __INTPTR_WIDTH__ 64
+#define QT_QMLWORKERSCRIPT_LIB 1
 #define __UINT_LEAST32_MAX__ 0xffffffffU
+#define QT_QUICK3DRUNTIMERENDER_LIB 1
 #define __FLT32X_HAS_DENORM__ 1
 #define __INT_FAST16_TYPE__ long int
 #define __MMX_WITH_SSE__ 1
@@ -221,7 +228,9 @@
 #define _STDC_PREDEF_H 1
 #define __INT_LEAST32_MAX__ 0x7fffffff
 #define __GCC_ATOMIC_INT_LOCK_FREE 2
+#define QT_QUICK_LIB 1
 #define __FLT128_MAX_EXP__ 16384
+#define QT_QML_LIB 1
 #define __FLT32_MANT_DIG__ 24
 #define __FLOAT_WORD_ORDER__ __ORDER_LITTLE_ENDIAN__
 #define SIZEOF_DPTR (sizeof(void*))
@@ -238,6 +247,7 @@
 #define __DEC128_MIN_EXP__ (-6142)
 #define __DEC128_MAX__ 9.999999999999999999999999999999999E6144DL
 #define __INT_FAST32_TYPE__ long int
+#define QT_CONCURRENT_LIB 1
 #define __UINT_LEAST16_TYPE__ short unsigned int
 #define __DEC128_MAX_EXP__ 6145
 #define unix 1
@@ -274,9 +284,11 @@
 #define __FLT16_IS_IEC_60559__ 1
 #define __FLT16_MAX_EXP__ 16
 #define __DEC32_SUBNORMAL_MIN__ 0.000001E-95DF
+#define QT_QMLMETA_LIB 1
 #define __INT_FAST16_MAX__ 0x7fffffffffffffffL
 #define __GCC_CONSTRUCTIVE_SIZE 64
 #define __FLT64_DIG__ 15
+#define QT_QUICK3D_LIB 1
 #define __UINT_FAST32_MAX__ 0xffffffffffffffffUL
 #define __UINT_LEAST64_TYPE__ long unsigned int
 #define __FLT16_EPSILON__ 9.76562500000000000000000000000000000e-4F16
@@ -298,6 +310,7 @@
 #define __INT_LEAST16_MAX__ 0x7fff
 #define __FLT16_NORM_MAX__ 6.55040000000000000000000000000000000e+4F16
 #define __DEC64_MANT_DIG__ 16
+#define QT_NETWORK_LIB 1
 #define __FLT32_DENORM_MIN__ 1.40129846432481707092372958328991613e-45F32
 #define __SIG_ATOMIC_WIDTH__ 32
 #define __INT_LEAST64_TYPE__ long int
@@ -387,6 +400,7 @@
 #define __FLT128_HAS_QUIET_NAN__ 1
 #define __INTMAX_MAX__ 0x7fffffffffffffffL
 #define __INT_FAST8_TYPE__ signed char
+#define QT_SHADERTOOLS_LIB 1
 #define __FLT64X_MIN__ 3.36210314311209350626267781732175260e-4932F64x
 #define __STDCPP_THREADS__ 1
 #define __BFLT16_HAS_DENORM__ 1

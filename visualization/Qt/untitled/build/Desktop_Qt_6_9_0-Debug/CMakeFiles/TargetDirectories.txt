@@ -1,4 +1,5 @@
 /home/mikolaj/studia/inznierka/Midas---Sensory-system-for-a-prosthetic-hand-/visualization/Qt/untitled/build/Desktop_Qt_6_9_0-Debug/CMakeFiles/untitled.dir
+/home/mikolaj/studia/inznierka/Midas---Sensory-system-for-a-prosthetic-hand-/visualization/Qt/untitled/build/Desktop_Qt_6_9_0-Debug/CMakeFiles/untitled_qmlimportscan.dir
 /home/mikolaj/studia/inznierka/Midas---Sensory-system-for-a-prosthetic-hand-/visualization/Qt/untitled/build/Desktop_Qt_6_9_0-Debug/CMakeFiles/edit_cache.dir
 /home/mikolaj/studia/inznierka/Midas---Sensory-system-for-a-prosthetic-hand-/visualization/Qt/untitled/build/Desktop_Qt_6_9_0-Debug/CMakeFiles/rebuild_cache.dir
 /home/mikolaj/studia/inznierka/Midas---Sensory-system-for-a-prosthetic-hand-/visualization/Qt/untitled/build/Desktop_Qt_6_9_0-Debug/CMakeFiles/list_install_components.dir

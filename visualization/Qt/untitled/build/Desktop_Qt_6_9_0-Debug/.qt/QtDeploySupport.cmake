@@ -60,6 +60,7 @@ set(__QT_DEPLOY_QT_DEBUG_POSTFIX "")
 set(__qt_deploy_support_files
     "/home/mikolaj/studia/inznierka/Midas---Sensory-system-for-a-prosthetic-hand-/visualization/Qt/untitled/build/Desktop_Qt_6_9_0-Debug/.qt/QtDeployTargets.cmake"
     "/home/mikolaj/Qt6.9.0/6.9.0/gcc_64/lib/cmake/Qt6Core/Qt6CoreDeploySupport.cmake"
+    "/home/mikolaj/Qt6.9.0/6.9.0/gcc_64/lib/cmake/Qt6Qml/Qt6QmlDeploySupport.cmake"
 )
 foreach(__qt_deploy_support_file IN LISTS __qt_deploy_support_files)
     include("${__qt_deploy_support_file}")
