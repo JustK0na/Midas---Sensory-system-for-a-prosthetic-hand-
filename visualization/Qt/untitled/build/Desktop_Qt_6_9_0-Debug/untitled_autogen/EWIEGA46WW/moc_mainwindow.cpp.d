@@ -1,5 +1,6 @@
 /home/mikolaj/studia/inznierka/Midas---Sensory-system-for-a-prosthetic-hand-/visualization/Qt/untitled/build/Desktop_Qt_6_9_0-Debug/untitled_autogen/EWIEGA46WW/moc_mainwindow.cpp: /home/mikolaj/studia/inznierka/Midas---Sensory-system-for-a-prosthetic-hand-/visualization/Qt/untitled/mainwindow.h \
   /home/mikolaj/studia/inznierka/Midas---Sensory-system-for-a-prosthetic-hand-/visualization/Qt/untitled/build/Desktop_Qt_6_9_0-Debug/untitled_autogen/moc_predefs.h \
+  /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtCore/QDebug \
   /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtCore/q17memory.h \
   /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtCore/q20functional.h \
   /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtCore/q20iterator.h \
@@ -47,6 +48,7 @@
   /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtCore/qglobalstatic.h \
   /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtCore/qhash.h \
   /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtCore/qhashfunctions.h \
+  /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtCore/qiodevice.h \
   /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtCore/qiodevicebase.h \
   /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtCore/qiterable.h \
   /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtCore/qiterator.h \
@@ -150,6 +152,15 @@
   /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtGui/qtguiglobal.h \
   /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtGui/qtransform.h \
   /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtGui/qwindowdefs.h \
+  /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtNetwork/QTcpServer \
+  /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtNetwork/QTcpSocket \
+  /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtNetwork/qabstractsocket.h \
+  /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtNetwork/qhostaddress.h \
+  /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtNetwork/qtcpserver.h \
+  /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtNetwork/qtcpsocket.h \
+  /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtNetwork/qtnetwork-config.h \
+  /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtNetwork/qtnetworkexports.h \
+  /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtNetwork/qtnetworkglobal.h \
   /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtWidgets/QMainWindow \
   /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtWidgets/qmainwindow.h \
   /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtWidgets/qsizepolicy.h \
