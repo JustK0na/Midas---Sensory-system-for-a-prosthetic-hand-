@@ -1,4 +1,4 @@
-23336285144679883
+23339813022039880
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -66296,6 +66296,13 @@ net tie
 0
 4
 4
+NetTie
+padyBMP581
+
+
+0
+6
+6
 OptoDevice
 ADNS-9800
 Laser Gaming Sensor ADNS-9800
@@ -95346,3 +95353,10 @@ TO220AB
 0
 0
 0
+myOwn
+padyBMP581
+
+
+0
+7
+7
