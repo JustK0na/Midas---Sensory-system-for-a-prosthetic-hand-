@@ -10,8 +10,10 @@
 #define UI_MAINWINDOW_H
 
 #include <QtCore/QVariant>
+#include <QtGui/QAction>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QMainWindow>
+#include <QtWidgets/QMenu>
 #include <QtWidgets/QMenuBar>
 #include <QtWidgets/QStatusBar>
 #include <QtWidgets/QWidget>
@@ -23,6 +25,7 @@ class Ui_MainWindow
 public:
     QWidget *centralwidget;
     QMenuBar *menubar;
+    QMenu *menuFingerTips;
     QStatusBar *statusbar;
 
     void setupUi(QMainWindow *MainWindow)
@@ -36,10 +39,14 @@ public:
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName("menubar");
         menubar->setGeometry(QRect(0, 0, 800, 34));
+        menuFingerTips = new QMenu(menubar);
+        menuFingerTips->setObjectName("menuFingerTips");
         MainWindow->setMenuBar(menubar);
         statusbar = new QStatusBar(MainWindow);
         statusbar->setObjectName("statusbar");
         MainWindow->setStatusBar(statusbar);
+
+        menubar->addAction(menuFingerTips->menuAction());
 
         retranslateUi(MainWindow);
 
@@ -49,6 +56,7 @@ public:
     void retranslateUi(QMainWindow *MainWindow)
     {
         MainWindow->setWindowTitle(QCoreApplication::translate("MainWindow", "MainWindow", nullptr));
+        menuFingerTips->setTitle(QCoreApplication::translate("MainWindow", "FingerTips", nullptr));
     } // retranslateUi
 
 };

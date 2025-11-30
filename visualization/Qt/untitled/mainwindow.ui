@@ -23,6 +23,12 @@
      <height>34</height>
     </rect>
    </property>
+   <widget class="QMenu" name="menuFingerTips">
+    <property name="title">
+     <string>FingerTips</string>
+    </property>
+   </widget>
+   <addaction name="menuFingerTips"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
