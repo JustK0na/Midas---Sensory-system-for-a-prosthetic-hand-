@@ -438,6 +438,6 @@
  mdp:/usr/lib/gcc/x86_64-linux-gnu/13/include/stdarg.h
  mdp:/usr/lib/gcc/x86_64-linux-gnu/13/include/stdbool.h
  mdp:/usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h
-/home/mikolaj/studia/inznierka/Midas---Sensory-system-for-a-prosthetic-hand-/visualization/Qt/untitled/main.cpp
 /home/mikolaj/studia/inznierka/Midas---Sensory-system-for-a-prosthetic-hand-/visualization/Qt/untitled/mainwindow.cpp
  uic:./ui_mainwindow.h
+/home/mikolaj/studia/inznierka/Midas---Sensory-system-for-a-prosthetic-hand-/visualization/Qt/untitled/main.cpp

@@ -9,7 +9,7 @@ MainWindow::MainWindow(QWidget *parent)
 
     tcpServer = new QTcpServer(this);
 
-    if(!tcpServer->listen(QHostAddress::Any, 5000)){
+    if(!tcpServer->listen(QHostAddress::AnyIPv4, 5000)){
         qDebug() << "Server failed to start\n" << tcpServer->errorString();
     }
     else{
