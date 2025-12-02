@@ -7,88 +7,69 @@
 #include <linux/spi/spidev.h>
 #include <string.h>
 #include <errno.h>
+#include <arpa/inet.h>
+
+#define DEBUG 0
+
+#define SERVER_IP "10.231.141.172" 
+#define PORT 5000
+int sock = 0;
+struct sockaddr_in serv_addr;
 
 uint8_t mode = SPI_MODE_0, bitsPerWord = 8;
+uint8_t readBuffor;
 uint32_t speed = 1000000;
 
-int initSPI(){
-  int fd = open("/dev/spidev0.0", O_RDWR);
-  if(fd < 0){
-    perror("Cannot open SPI device >w<\n");
-    close(fd);
-    exit(-1);
-  }
+#include "BMP581.h"
+#include "client.h"
 
-  if(ioctl(fd, SPI_IOC_WR_MODE, &mode) == -1){
-    perror("Cannot set SPI device MODE to 0\n");
-    close(fd);
-    exit(-1);
-  }
 
-  if(ioctl(fd, SPI_IOC_WR_BITS_PER_WORD, &bitsPerWord) == -1){
-    perror("Cannot set SPI device Bits Per Word\n");
-    close(fd);
-    exit(-1);
-  }
-  if(ioctl(fd, SPI_IOC_WR_MAX_SPEED_HZ, &speed) == -1){
-    perror("Cannot set SPI device MODE to 0\n");
-    close(fd);
-    exit(-1);
-  }
-
-  return fd;
-}
-uint8_t readRegister(uint8_t readReg, int fd){
-  uint8_t tx[2];
-  uint8_t rx[2];
-
-  struct spi_ioc_transfer tr = {
+void measureLoop(uint8_t fd){
+ int  n=0;
+ double pressure = 0;
+  while(n<100){
+    int timeout = 500; //500ms
+    int waited = 0;
     
-    .tx_buf = (unsigned long) tx,
-    .rx_buf = (unsigned long) rx,
-    .len = 2,
-    .speed_hz = speed,
-    .bits_per_word = bitsPerWord,    
-  };
-
-  tx[0] = 0x80 | (readReg & 0x7F);
-  tx[1] = 0x00;
-
-  memset(rx, 0, sizeof(rx));
-  if(ioctl(fd, SPI_IOC_MESSAGE(1), &tr) < 1){
-    perror("SPI transfer failed\n");
-    exit(-1);
-  }
-  return rx[1];
-
+    while(1){
+      readBuffor = readRegister(0x27, fd);
+      if((readBuffor & 0x01))
+	break;
+      
+      usleep(1000);
+      waited++;
+      if(waited>=timeout){
+	printf("\tmeasurement timeout\n");
+	break;
+      }
+    }
+    pressure = readAndConvertPressure(fd);
+    printf("%f\n", pressure); //100hz = 0.01s = 10ms = 10000us
+    char message[100];
+    snprintf(message, sizeof(message), "%f", pressure);
+    send(sock, message, strlen(message), 0);
+    printf("Sent: %s\n", message);
+    n++;
+  } 
 }
 
 int main(){
   int fd=0;
-  uint8_t readBuffor;
   
-  printf("Hello World!:= 0x%08b\n", 0x1A);
   fd = initSPI();
+  
+  startSPI(fd);
+  if(DEBUG)
+    statusCheck(fd);
+  startUPProcedure(fd);
 
-  //DUMMY READ TO START SPI
-  readBuffor = readRegister(0x01, fd);
+  //TCP Client setup and connect
+  TCPClient();
   
-  printf("Checking if everything is alright....\n");
-  readBuffor = readRegister(0x01, fd);
-  printf("CHIP_ID =  0x%02X\n", readBuffor);
-  printf("\tShould just not be all zeros, preferably 0x50\n");
+  //printf("\n\nMierzenie ciśnienia:\n\n");
+  measureLoop(fd);
   
-  readBuffor = readRegister(0x28, fd);
-  printf("STATUS =  0x%08b\n", readBuffor);
-  printf("\tShould look like that: 0xXXXXX01X\n");
-  
-  readBuffor = readRegister(0x27, fd);
-  printf("INTERRUPT_STATUS  =  0x%08b\n", readBuffor);
-  printf("\tShould look like that: 0xXXX1XXXX\n");
-
-  
-    
-  
+  close(sock);
   close(fd);
   return(0);
 }
