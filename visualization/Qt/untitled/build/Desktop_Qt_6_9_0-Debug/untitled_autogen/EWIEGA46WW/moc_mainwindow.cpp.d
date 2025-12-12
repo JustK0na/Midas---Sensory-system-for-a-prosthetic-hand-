@@ -1,6 +1,14 @@
 /home/mikolaj/studia/inznierka/Midas---Sensory-system-for-a-prosthetic-hand-/visualization/Qt/untitled/build/Desktop_Qt_6_9_0-Debug/untitled_autogen/EWIEGA46WW/moc_mainwindow.cpp: /home/mikolaj/studia/inznierka/Midas---Sensory-system-for-a-prosthetic-hand-/visualization/Qt/untitled/mainwindow.h \
   /home/mikolaj/studia/inznierka/Midas---Sensory-system-for-a-prosthetic-hand-/visualization/Qt/untitled/build/Desktop_Qt_6_9_0-Debug/untitled_autogen/moc_predefs.h \
-  /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtCore/QDebug \
+  /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtCore/QEvent \
+  /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtCore/QHash \
+  /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtCore/QList \
+  /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtCore/QMargins \
+  /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtCore/QObject \
+  /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtCore/QRect \
+  /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtCore/QRectF \
+  /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtCore/QSize \
+  /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtCore/QSizeF \
   /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtCore/q17memory.h \
   /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtCore/q20functional.h \
   /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtCore/q20iterator.h \
@@ -8,6 +16,7 @@
   /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtCore/q20type_traits.h \
   /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtCore/q20utility.h \
   /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtCore/q23utility.h \
+  /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtCore/qabstracteventdispatcher.h \
   /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtCore/qalgorithms.h \
   /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtCore/qanystringview.h \
   /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtCore/qarraydata.h \
@@ -17,11 +26,13 @@
   /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtCore/qatomic.h \
   /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtCore/qatomic_cxx11.h \
   /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtCore/qbasicatomic.h \
+  /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtCore/qbasictimer.h \
   /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtCore/qbindingstorage.h \
   /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtCore/qbytearray.h \
   /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtCore/qbytearrayalgorithms.h \
   /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtCore/qbytearraylist.h \
   /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtCore/qbytearrayview.h \
+  /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtCore/qcalendar.h \
   /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtCore/qchar.h \
   /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtCore/qcompare.h \
   /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtCore/qcompare_impl.h \
@@ -33,10 +44,17 @@
   /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtCore/qcontainerinfo.h \
   /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtCore/qcontainertools_impl.h \
   /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtCore/qcontiguouscache.h \
+  /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtCore/qcoreapplication.h \
+  /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtCore/qcoreapplication_platform.h \
+  /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtCore/qcoreevent.h \
   /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtCore/qdarwinhelpers.h \
   /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtCore/qdatastream.h \
+  /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtCore/qdatetime.h \
+  /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtCore/qdeadlinetimer.h \
   /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtCore/qdebug.h \
+  /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtCore/qelapsedtimer.h \
   /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtCore/qendian.h \
+  /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtCore/qeventloop.h \
   /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtCore/qexceptionhandling.h \
   /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtCore/qflags.h \
   /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtCore/qfloat16.h \
@@ -55,15 +73,18 @@
   /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtCore/qlatin1stringview.h \
   /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtCore/qline.h \
   /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtCore/qlist.h \
+  /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtCore/qlocale.h \
   /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtCore/qlogging.h \
   /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtCore/qmalloc.h \
   /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtCore/qmap.h \
   /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtCore/qmargins.h \
   /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtCore/qmath.h \
   /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtCore/qmetacontainer.h \
+  /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtCore/qmetaobject.h \
   /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtCore/qmetatype.h \
   /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtCore/qminmax.h \
   /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtCore/qnamespace.h \
+  /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtCore/qnativeinterface.h \
   /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtCore/qnumeric.h \
   /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtCore/qobject.h \
   /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtCore/qobject_impl.h \
@@ -72,6 +93,7 @@
   /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtCore/qoverload.h \
   /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtCore/qpair.h \
   /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtCore/qpoint.h \
+  /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtCore/qpointer.h \
   /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtCore/qprocessordetection.h \
   /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtCore/qrect.h \
   /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtCore/qrefcount.h \
@@ -120,37 +142,61 @@
   /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtCore/qtversion.h \
   /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtCore/qtversionchecks.h \
   /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtCore/qtypeinfo.h \
+  /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtCore/qtyperevision.h \
   /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtCore/qtypes.h \
+  /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtCore/qurl.h \
   /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtCore/qutf8stringview.h \
   /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtCore/qvariant.h \
   /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtCore/qvarlengtharray.h \
+  /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtCore/qversionnumber.h \
   /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtCore/qversiontagging.h \
   /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtCore/qxptype_traits.h \
   /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtCore/qyieldcpu.h \
+  /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtGui/QMatrix4x4 \
+  /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtGui/QTransform \
   /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtGui/qaction.h \
   /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtGui/qbitmap.h \
   /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtGui/qbrush.h \
   /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtGui/qcolor.h \
   /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtGui/qcursor.h \
+  /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtGui/qevent.h \
+  /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtGui/qeventpoint.h \
   /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtGui/qfont.h \
   /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtGui/qfontinfo.h \
   /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtGui/qfontmetrics.h \
   /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtGui/qfontvariableaxis.h \
+  /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtGui/qgenericmatrix.h \
+  /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtGui/qguiapplication.h \
+  /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtGui/qguiapplication_platform.h \
   /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtGui/qicon.h \
   /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtGui/qimage.h \
+  /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtGui/qinputdevice.h \
+  /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtGui/qinputmethod.h \
   /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtGui/qkeysequence.h \
+  /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtGui/qmatrix4x4.h \
   /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtGui/qpaintdevice.h \
   /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtGui/qpalette.h \
   /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtGui/qpixelformat.h \
   /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtGui/qpixmap.h \
+  /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtGui/qpointingdevice.h \
   /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtGui/qpolygon.h \
+  /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtGui/qquaternion.h \
   /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtGui/qregion.h \
   /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtGui/qrgb.h \
   /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtGui/qrgba64.h \
+  /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtGui/qscreen.h \
+  /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtGui/qscreen_platform.h \
+  /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtGui/qsurface.h \
+  /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtGui/qsurfaceformat.h \
   /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtGui/qtgui-config.h \
   /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtGui/qtguiexports.h \
   /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtGui/qtguiglobal.h \
   /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtGui/qtransform.h \
+  /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtGui/qvector2d.h \
+  /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtGui/qvector3d.h \
+  /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtGui/qvector4d.h \
+  /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtGui/qvectornd.h \
+  /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtGui/qwindow.h \
   /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtGui/qwindowdefs.h \
   /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtNetwork/QTcpServer \
   /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtNetwork/QTcpSocket \
@@ -161,6 +207,33 @@
   /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtNetwork/qtnetwork-config.h \
   /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtNetwork/qtnetworkexports.h \
   /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtNetwork/qtnetworkglobal.h \
+  /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtQml/qjsnumbercoercion.h \
+  /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtQml/qjsprimitivevalue.h \
+  /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtQml/qjsvalue.h \
+  /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtQml/qqml.h \
+  /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtQml/qqmldebug.h \
+  /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtQml/qqmlerror.h \
+  /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtQml/qqmlinfo.h \
+  /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtQml/qqmllist.h \
+  /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtQml/qqmlparserstatus.h \
+  /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtQml/qqmlprivate.h \
+  /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtQml/qqmlpropertyvaluesource.h \
+  /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtQml/qqmlregistration.h \
+  /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtQml/qtqml-config.h \
+  /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtQml/qtqmlexports.h \
+  /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtQml/qtqmlglobal.h \
+  /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtQmlIntegration/qqmlintegration.h \
+  /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtQuick/qquickwindow.h \
+  /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtQuick/qsggeometry.h \
+  /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtQuick/qsgnode.h \
+  /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtQuick/qsgrendererinterface.h \
+  /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtQuick/qtquick-config.h \
+  /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtQuick/qtquickexports.h \
+  /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtQuick/qtquickglobal.h \
+  /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtQuickWidgets/QQuickWidget \
+  /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtQuickWidgets/qquickwidget.h \
+  /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtQuickWidgets/qtquickwidgetsexports.h \
+  /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtQuickWidgets/qtquickwidgetsglobal.h \
   /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtWidgets/QMainWindow \
   /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtWidgets/qmainwindow.h \
   /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtWidgets/qsizepolicy.h \
@@ -169,6 +242,7 @@
   /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtWidgets/qtwidgetsexports.h \
   /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtWidgets/qtwidgetsglobal.h \
   /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/include/QtWidgets/qwidget.h \
+  /home/mikolaj/studia/inznierka/Midas---Sensory-system-for-a-prosthetic-hand-/visualization/Qt/untitled/graphbridge.h \
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
@@ -432,6 +506,7 @@
   /usr/include/x86_64-linux-gnu/sys/cdefs.h \
   /usr/include/x86_64-linux-gnu/sys/select.h \
   /usr/include/x86_64-linux-gnu/sys/types.h \
+  /usr/lib/gcc/x86_64-linux-gnu/13/include/float.h \
   /usr/lib/gcc/x86_64-linux-gnu/13/include/stdarg.h \
   /usr/lib/gcc/x86_64-linux-gnu/13/include/stdbool.h \
   /usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h

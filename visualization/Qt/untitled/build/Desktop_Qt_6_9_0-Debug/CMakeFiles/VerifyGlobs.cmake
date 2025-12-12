@@ -42,7 +42,9 @@ endif()
 file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "/home/mikolaj/studia/inznierka/Midas---Sensory-system-for-a-prosthetic-hand-/visualization/Qt/untitled/*.cpp")
 set(OLD_GLOB
   "/home/mikolaj/studia/inznierka/Midas---Sensory-system-for-a-prosthetic-hand-/visualization/Qt/untitled/build/Desktop_Qt_6_9_0-Debug/CMakeFiles/3.28.1/CompilerIdCXX/CMakeCXXCompilerId.cpp"
+  "/home/mikolaj/studia/inznierka/Midas---Sensory-system-for-a-prosthetic-hand-/visualization/Qt/untitled/build/Desktop_Qt_6_9_0-Debug/untitled_autogen/EWIEGA46WW/moc_graphbridge.cpp"
   "/home/mikolaj/studia/inznierka/Midas---Sensory-system-for-a-prosthetic-hand-/visualization/Qt/untitled/build/Desktop_Qt_6_9_0-Debug/untitled_autogen/EWIEGA46WW/moc_mainwindow.cpp"
+  "/home/mikolaj/studia/inznierka/Midas---Sensory-system-for-a-prosthetic-hand-/visualization/Qt/untitled/build/Desktop_Qt_6_9_0-Debug/untitled_autogen/EWIEGA46WW/qrc_resources.cpp"
   "/home/mikolaj/studia/inznierka/Midas---Sensory-system-for-a-prosthetic-hand-/visualization/Qt/untitled/build/Desktop_Qt_6_9_0-Debug/untitled_autogen/mocs_compilation.cpp"
   "/home/mikolaj/studia/inznierka/Midas---Sensory-system-for-a-prosthetic-hand-/visualization/Qt/untitled/main.cpp"
   "/home/mikolaj/studia/inznierka/Midas---Sensory-system-for-a-prosthetic-hand-/visualization/Qt/untitled/mainwindow.cpp"
@@ -66,6 +68,7 @@ file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "/home/mikolaj/studia/inznierk
 set(OLD_GLOB
   "/home/mikolaj/studia/inznierka/Midas---Sensory-system-for-a-prosthetic-hand-/visualization/Qt/untitled/build/Desktop_Qt_6_9_0-Debug/untitled_autogen/include/ui_mainwindow.h"
   "/home/mikolaj/studia/inznierka/Midas---Sensory-system-for-a-prosthetic-hand-/visualization/Qt/untitled/build/Desktop_Qt_6_9_0-Debug/untitled_autogen/moc_predefs.h"
+  "/home/mikolaj/studia/inznierka/Midas---Sensory-system-for-a-prosthetic-hand-/visualization/Qt/untitled/graphbridge.h"
   "/home/mikolaj/studia/inznierka/Midas---Sensory-system-for-a-prosthetic-hand-/visualization/Qt/untitled/mainwindow.h"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
@@ -139,6 +142,8 @@ endif()
 # _directory_contents at /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/lib/cmake/Qt6LinguistTools/Qt6LinguistToolsMacros.cmake:55 (file)
 file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "/home/mikolaj/studia/inznierka/Midas---Sensory-system-for-a-prosthetic-hand-/visualization/Qt/untitled/*.qml")
 set(OLD_GLOB
+  "/home/mikolaj/studia/inznierka/Midas---Sensory-system-for-a-prosthetic-hand-/visualization/Qt/untitled/build/Desktop_Qt_6_9_0-Debug/graph.qml"
+  "/home/mikolaj/studia/inznierka/Midas---Sensory-system-for-a-prosthetic-hand-/visualization/Qt/untitled/graph.qml"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   message("-- GLOB mismatch!")
@@ -148,6 +153,7 @@ endif()
 # _directory_contents at /home/mikolaj/Qt6.9.0/6.9.0/gcc_64/lib/cmake/Qt6LinguistTools/Qt6LinguistToolsMacros.cmake:55 (file)
 file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "/home/mikolaj/studia/inznierka/Midas---Sensory-system-for-a-prosthetic-hand-/visualization/Qt/untitled/*.qrc")
 set(OLD_GLOB
+  "/home/mikolaj/studia/inznierka/Midas---Sensory-system-for-a-prosthetic-hand-/visualization/Qt/untitled/resources.qrc"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   message("-- GLOB mismatch!")

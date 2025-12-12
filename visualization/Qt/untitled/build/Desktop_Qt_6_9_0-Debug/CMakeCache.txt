@@ -460,6 +460,12 @@ Qt6QuickShapesPrivate_DIR:PATH=/home/mikolaj/Qt6.9.0/6.9.0/gcc_64/lib/cmake/Qt6Q
 //The directory containing a CMake configuration file for Qt6QuickTools.
 Qt6QuickTools_DIR:PATH=/home/mikolaj/Qt6.9.0/6.9.0/gcc_64/lib/cmake/Qt6QuickTools
 
+//The directory containing a CMake configuration file for Qt6QuickWidgetsPrivate.
+Qt6QuickWidgetsPrivate_DIR:PATH=/home/mikolaj/Qt6.9.0/6.9.0/gcc_64/lib/cmake/Qt6QuickWidgetsPrivate
+
+//The directory containing a CMake configuration file for Qt6QuickWidgets.
+Qt6QuickWidgets_DIR:PATH=/home/mikolaj/Qt6.9.0/6.9.0/gcc_64/lib/cmake/Qt6QuickWidgets
+
 //The directory containing a CMake configuration file for Qt6Quick.
 Qt6Quick_DIR:PATH=/home/mikolaj/Qt6.9.0/6.9.0/gcc_64/lib/cmake/Qt6Quick
 

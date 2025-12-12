@@ -44,12 +44,12 @@ void measureLoop(uint8_t fd){
       }
     }
     pressure = readAndConvertPressure(fd);
-    printf("%f\n", pressure); //100hz = 0.01s = 10ms = 10000us
     char message[100];
-    snprintf(message, sizeof(message), "%f", pressure);
+    snprintf(message, sizeof(message), "%f\n", pressure);
     send(sock, message, strlen(message), 0);
-    printf("Sent: %s\n", message);
-    n++;
+    printf("%s", message);
+    //    printf("%f\n", pressure); //100hz = 0.01s = 10ms = 10000us
+    //n++;
   } 
 }
 

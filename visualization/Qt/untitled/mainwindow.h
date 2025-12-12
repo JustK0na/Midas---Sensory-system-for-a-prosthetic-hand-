@@ -4,29 +4,37 @@
 #include <QMainWindow>
 #include <QTcpServer>
 #include <QTcpSocket>
-#include <QDebug>
+#include <QQuickWidget>
+#include <QHash>
+
+#include "graphbridge.h"
 
 QT_BEGIN_NAMESPACE
-namespace Ui {
-class MainWindow;
-}
+namespace Ui { class MainWindow; }
 QT_END_NAMESPACE
 
-class MainWindow : public QMainWindow
-{
+class MainWindow : public QMainWindow {
     Q_OBJECT
 
 public:
     MainWindow(QWidget *parent = nullptr);
-    ~MainWindow();
+    ~MainWindow() override;
 
 private slots:
-    void handleNewConection();
+    void handleNewConnection();
     void readClientData();
 
 private:
     Ui::MainWindow *ui;
     QTcpServer *tcpServer;
     QList<QTcpSocket*> clients;
+    QHash<QTcpSocket*, QByteArray> recvBuffers;
+
+    // QML + Graph bridge
+    QQuickWidget *quickWidget;
+    GraphBridge bridge;
+
+    qint64 sampleIndex;
 };
+
 #endif // MAINWINDOW_H
