@@ -1,2 +1,56 @@
 Sensor 2 => prawy
 Sensor 1 =>lewy
+
+
+#300 gram czujnik 2
+162-168
+
+#300 gram czujnik 1
+131-138
+
+#300 gram oba
+177-180
+
+DANE:
+
+Czujnik2 1kg
+82s = 1029g
+83s = 1019g
+85s = 990g
+87s = 898g
+92s = 1215g
+94s = 1175g
+
+Czujnik2 1kg Razem
+100s = 824g
+103s = 1090g
+105s = 980g
+
+Czujnik2 300g
+164s = 258g
+164.2s = 276g
+164.8s = 280g
+165.1s = 222g
+165.5s = 380g
+
+Czujnik1 1kg 
+55s = 846g
+57s = 1224g
+59s = 1125g
+
+Czujnik1 1kg Razem
+100s = 824g
+103s = 1090g
+105s = 980g
+
+Czujnik1 300g 
+132s = 437g
+135s = 562g
+137s = 600g
+
+Czujnik1 300g razem
+177.5s = 197g
+177.8s = 1215g
+178s = 256g
+178.3s = 289g 
+178.7s = 219g 
