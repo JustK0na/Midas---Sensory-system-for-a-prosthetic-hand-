@@ -1,0 +1,2 @@
+Sensor 2 => prawy
+Sensor 1 =>lewy
