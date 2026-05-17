@@ -1,75 +1,46 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <stdint.h>
 #include <fcntl.h>
+#include <linux/i2c-dev.h>
+#include <i2c/smbus.h>
 #include <sys/ioctl.h>
-#include <unistd.h>
-#include <linux/spi/spidev.h>
-#include <string.h>
-#include <errno.h>
-#include <arpa/inet.h>
 
-#define DEBUG 0
-
-#define SERVER_IP "10.231.141.172" 
-#define PORT 5000
-int sock = 0;
-struct sockaddr_in serv_addr;
-
-uint8_t mode = SPI_MODE_0, bitsPerWord = 8;
-uint8_t readBuffor;
-uint32_t speed = 1000000;
-
-#include "BMP581.h"
-#include "client.h"
-
-
-void measureLoop(uint8_t fd){
- int  n=0;
- double pressure = 0;
-  while(n<100){
-    int timeout = 500; //500ms
-    int waited = 0;
-    
-    while(1){
-      readBuffor = readRegister(0x27, fd);
-      if((readBuffor & 0x01))
-	break;
-      
-      usleep(1000);
-      waited++;
-      if(waited>=timeout){
-	printf("\tmeasurement timeout\n");
-	break;
-      }
-    }
-    pressure = readAndConvertPressure(fd);
-    char message[100];
-    snprintf(message, sizeof(message), "%f\n", pressure);
-    send(sock, message, strlen(message), 0);
-    printf("%s", message);
-    //    printf("%f\n", pressure); //100hz = 0.01s = 10ms = 10000us
-    //n++;
-  } 
-}
 
 int main(){
-  int fd=0;
-  
-  fd = initSPI();
-  
-  startSPI(fd);
-  if(DEBUG)
-    statusCheck(fd);
-  startUPProcedure(fd);
 
-  //TCP Client setup and connect
-  TCPClient();
+  int file;
+  int adapter = 6;
+  char filename[20];
+
+  printf("Hello world\n");
   
-  //printf("\n\nMierzenie ciśnienia:\n\n");
-  measureLoop(fd);
+  snprintf(filename, 19, "/dev/i2c-%d", adapter);
+  file = open(filename, O_RDWR);
+
+  if(file < 0){
+    perror("Device doesn't exist or cannot be accessed\n");    
+    exit(1);
+  }
+
+
+  int addr = 0x46;
+
+
+  if(ioctl(file, I2C_SLAVE, addr)<0){
+    perror("wrond address\n");    
+    exit(1);    
+  }
+
+
+
   
-  close(sock);
-  close(fd);
-  return(0);
+  
+  
+
+  
+
+  return 0;
 }
+
+// gcc main.c -Wall -pedantic -o main 
+//i2cdetect -l
