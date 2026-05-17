@@ -1,16 +1,30 @@
-//i2cdetect -l 
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdint.h>
 #include <fcntl.h>
-#include <unistd.h>
-#include <linux/i2c-dev.h>
 #include <sys/ioctl.h>
+#include <unistd.h>
+#include <linux/spi/spidev.h>
+#include <string.h>
+#include <errno.h>
+#include <arpa/inet.h>
+#include <pthread.h>
 #include <sys/time.h>
 
-uint8_t readBuffor;
+#define SERVER_IP "192.168.100.10"
+#define PORT 5000
+int sock = 0;
+struct sockaddr_in serv_addr;
 
-#include "BMP581i2c.h"
+uint8_t mode = SPI_MODE_0, bitsPerWord = 8;
+uint8_t readBuffor;
+uint32_t speed = 1000000;
+
+#include "BMP581.h"
+#include "client.h"
+
+pthread_mutex_t send_mutex = PTHREAD_MUTEX_INITIALIZER;
+
 
 void measureLoop(uint8_t fd, uint8_t fd2, int i, int j){
  int  n=0;
@@ -70,43 +84,44 @@ void measureLoop(uint8_t fd, uint8_t fd2, int i, int j){
    char message[256];
    gettimeofday(&stop, NULL);
    snprintf(message, sizeof(message), "%6.0lu;%.2f;%.2f\n",((stop.tv_sec - start.tv_sec) * 1000000 + stop.tv_usec-start.tv_usec)/1000,  pressure,  pressure2);
-   //send(sock, message, strlen(message), 0);
+   send(sock, message, strlen(message), 0);
    printf("%s", message);
-   usleep(500000);
    //    printf("%f\n", pressure); //100hz = 0.01s = 10ms = 10000us
    //n++;
  } 
 }
 
-int main() {
-    char *filename = "/dev/i2c-1";
-    int fd=0, fd2=0;
-    
-    fd = initI2C(filename, 0x46);
-    fd2 = initI2C(filename, 0x47);
-
-    printf("Starting sensor 1 \n");
-    startI2C(fd);
-    printf("Starting sensor 2 \n");
-    startI2C(fd2);
-
-
-    #ifdef DEBUG
-    printf("Sensor 1:\n");
+int main(){
+  int fd=0, fd2=0;
+  
+  fd = initSPI("/dev/spidev0.0");
+  fd2 = initSPI("/dev/spidev0.1");
+  printf("\t\tsensor 1\n");
+  startSPI(fd);
+  printf("\t\tsensor 2\n");
+  startSPI(fd2);
+  
+#ifdef DEBUG  
+    printf("\t\tsensor 1\n");
     statusCheck(fd);
-    printf("Sensor 2:\n");
+    printf("\t\tsensor 2\n");
     statusCheck(fd2);
-    #endif
+#endif
 
+  printf("\t\tsensor 1\n");
+  startUPProcedure(fd);
+  printf("\t\tsensor 2\n");
+  startUPProcedure(fd2);
+  
+  //TCP Client setup and connect
+  TCPClient();
+  
+  //printf("\n\nMierzenie ciśnienia:\n\n");
+  measureLoop(fd, fd2, 1, 2);
 
-    printf("setting sensor 1 up\n");
-    startUPProcedure(fd);
-    printf("setting sensor 2 up\n");
-    startUPProcedure(fd2);
-
-    measureLoop(fd, fd2, 1, 2);
-    
-    close(fd);
-    close(fd2);
-    return 0;
+  
+  close(sock);
+  close(fd);
+  close(fd2);
+  return(0);
 }
